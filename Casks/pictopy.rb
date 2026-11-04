@@ -1,8 +1,8 @@
 cask "pictopy" do
   arch arm: "aarch64"
 
-  version "1.3.0-beta"
-  sha256 "bf7037ae9e130d7dc128488fba7f85221f400f13bcd278f25d6aa5f003c55901"
+  version "1.2.0"
+  sha256 "c01f4f45f3f7e987e9b06e7ce6852d4eb1dfd96730d10bf4319156d4ab67895d"
 
   url "https://github.com/AOSSIE-Org/PictoPy/releases/download/v#{version}/PictoPy_#{arch}.app.tar.gz"
   name "PictoPy"
@@ -16,7 +16,9 @@ cask "pictopy" do
 
   zap trash: [
     "~/Library/Application Support/org.aossie.pictopy",
+    "~/Library/Application Support/PictoPy",
     "~/Library/Caches/org.aossie.pictopy",
     "~/Library/Saved Application State/org.aossie.pictopy.savedState",
+    "~/Library/WebKit/org.aossie.pictopy",
   ]
 end
